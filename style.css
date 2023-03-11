@@ -1,21 +1,22 @@
 /* General Styles */
 
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 body {
-	font-family: Helvetica, sans-serif;
+	font-family: Montserrat, sans-serif;
 	margin: 0;
-	padding: 0;
+	padding: 0; 
+	color: #403D39;
 }
 
 h1, h2, h3 {
 	margin: 0;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+img.float-left {
+	float: left;
+	margin: 0 20px 20px 0;
 }
 
 /* Header Styles */
@@ -37,7 +38,7 @@ nav ul {
 	padding: 0;
 }
 
-nav li {
+nav ul {
 	display: inline-block;
 	margin-right: 20px;
 }
@@ -53,6 +54,10 @@ nav a {
 
 /* About Section Styles */
 
+#profile {
+	width: 50%;
+}
+
 #about {
 	background-color: #f2f2f2;
 	padding: 50px;
@@ -60,10 +65,27 @@ nav a {
 }
 
 #about h2 {
-	font-size: 30px;
-	margin-bottom: 30px;
+	font-size: 60px;
+	margin-bottom: 50px;
+	font-weight: lighter;
 }
 
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+
+li:before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: #E07A5F; /* Change color to your preference */
+	border-radius: 20%; /* Make the bullet point circular */
+	margin-right: .5em; /* Add spacing between bullet point and text */
+  }
+  
 /* Work Section Styles */
 
 #work {
@@ -147,11 +169,26 @@ form input[type="submit"] {
 	cursor: pointer;
 }
 
+hr {
+	border-top: 1px solid #403D39; /* Set line color and thickness */
+	margin: 10px 0%; /* Add margin to adjust line position */
+  }
+
+button {
+	background-color: #3D405B; /* Set the background color */
+	color: #F1F2EB; /* Set the text color */
+	padding: 12px 14px; /* Add padding */
+	border: none; /* Remove borders */
+	border-radius: 5px; /* Add rounded corners */
+	cursor: pointer; /* Set cursor style */
+	font-size: 13px; /* Set font size */
+}
+
 /* Footer Styles */
 
 footer {
 	background-color: #6F9283;
-	color: #fff;
+	color: #F1F2EB;
 	padding: 20px;
 	text-align: center;
 }
